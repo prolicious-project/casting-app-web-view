@@ -1,6 +1,14 @@
 {
   "rewrites": [
     {
+      "source": "/admin",
+      "destination": "https://casting-admin-nu.vercel.app/admin/"
+    },
+    {
+      "source": "/admin/:path*",
+      "destination": "https://casting-admin-nu.vercel.app/admin/:path*"
+    },
+    {
       "source": "/(.*)",
       "destination": "/index.html"
     }
